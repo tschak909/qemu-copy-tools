@@ -52,4 +52,12 @@ Once the client socket is connected, the sending program sends 256 bytes contain
 
 Because the server is always the host, and on a known address and port, it will work out of the box with the default NAT (SLIRP) networking provided by qemu.
 
+## Compiling
 
+### on Host
+
+$ cc -o qh qh.c
+
+### on Guest
+
+$ cc -o qg qg.c
